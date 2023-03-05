@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鎰威科技</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper" id="wrapper_out">
+        <div class="top_area">
+            <div>
+                <div class="top_title">
+                    <div class="title_text">
+                        <h3>There is no one</h3>
+                        <h3>who loves pain</h3>
+                    </div>
+                    <div style="margin: 12px auto;">
+                        <img src="./images/Text.png">
+                    </div>
+                </div>
+                <div class="instructions">
+                    <div class="cactus_text">
+                        <img src="./images/cactus.png">
+                        <h6>paragraph</h6>
+                        <img src="./images/cactus.png">
+                    </div>
+                    <p>1.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="cactus_text">
+                        <img src="./images/cactus.png">
+                        <h6>paragraph</h6>
+                        <img src="./images/cactus.png">
+                    </div>
+                    <p>1.Quisque sodales leo vitae vulputate auctor.</p>
+                    <p>2.Proin ac justo ut nisl tincidunt imperdiet.Maecenas viverra libero a pellentesque blandit.</p>
+                    <p>3.Cras tristique tellus id leo bibendum, eu dapibus nisl accumsan.</p>
+                    <p>4.Donec ultrices sapien vitae leo venenatis ullamcorper.</p>
+                </div>
+            </div>
+        </div>
+        <div class="waves"><img style="width: 100%;" src="./images/海浪.png"></div>
+        <div class="input_area">
+            <div class="form_area">
+                <div class="form_logo"><img src="./images/Frame 1819.png"></div>
+                <div class="form">
+                    <!-- <p>store</p>
+                    <input type="text" placeholder="placeholder text">
+                    <p class="interval">name</p>
+                    <input type="text" placeholder="placeholder text">
+                    <p class="interval">phone</p>
+                    <input type="text" placeholder="placeholder text">
+                    <p class="interval">Amount of consumption</p>
+                    <input type="text" placeholder="placeholder text">
+                    <p class="interval">payment</p>
+                    <input type="text"> -->
+                    <p>store*</p>
+                    <select v-model="store" required>
+                        <!-- <option value="" style="display: none">placeholder text</option> -->
+                        <option value="store1">store1</option>
+                        <option value="store2">store2</option>
+                        <option value="store3">store3</option>
+                    </select>
+                    <p>name*</p>
+                    <input type="text" placeholder="placeholder text" v-model="name" required>
+                    <p>phone*</p>
+                    <input type="text" placeholder="placeholder text" v-model="phone" required>
+                    <p>Amount of consumption*</p>
+                    <input type="text" placeholder="placeholder text" v-model="Amount" required>
+                    <p>payment*</p>
+                    <select v-model="payment" required>
+                        <option value="digital payment">digital payment</option>
+                        <option value="ATM">ATM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit" @click="confirm">
+                <!-- <img src="./images/submit.png"> -->
+                <img v-if="!cond" src="./images/false.png">
+                <img v-if="cond" src="./images/true.png">
+                <p v-if="!cond">This person does not exist</p>
+            </div>
+            <div class="label_array">
+                <ul>
+                    <li>
+                        <img src="./images/certificateA.png">
+                        <p>dehumidifier</p>
+                        <div class="small_icon_green green_line">ONE</div>
+                    </li>
+                    <li>
+                        <img src="./images/certificateA.png">
+                        <p>range hood</p>
+                        <div class="small_icon_green">ONE</div>
+                    </li>
+                    <li>
+                        <img src="./images/certificateA.png">
+                        <p>vacuum cleaner</p>
+                        <div class="small_icon_green">ONE</div>
+                    </li>
+                    <li>
+                        <img src="./images/certificateD.png">
+                        <p>toaster</p>
+                        <div class="small_icon_green">ONE</div>
+                    </li>
+                    <li>
+                        <img src="./images/certificateD.png">
+                        <p> scale</p>
+                        <div class="small_icon_green">ONE</div>
+                    </li>
+                    <li>
+                        <img src="./images/certificateD.png">
+                        <p>straightening iron</p>
+                        <div class="small_icon_green">ONE</div>
+                    </li>
+                    <li>
+                        <img src="./images/certificateD.png">
+                        <p>vacuum cleaner</p>
+                        <div class="small_icon_green">ONE</div>
+                    </li>
+                    <li>
+                        <img src="./images/certificateD.png">
+                        <p>rice cooker</p>
+                        <div class="small_icon_green">ONE</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="lighthouse">
+                <div class="lighthouse_text">
+                    <p>13.32</p>
+                    <p>who seeks after it and <br> wants to have it</p>
+                </div>
+                <div>
+                    <img src="./images/lighthouse.png">
+                </div>
+            </div>
+        </div>
+        <div class="bottom_img">
+            <div class="market_out">
+                <p>Neque porro quisquam <br> est qui dolorem!</p>
+                <img src="./images/market.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#wrapper_out',
+
+            data: {
+                name:'',
+                phone:'',
+                Amount:'',
+                cond:false,
+            },
+            methods: {
+                confirm(){
+                    var myreg=/^09[0-9]{8}$/; 
+                    if(!myreg.test(this.phone)){ 
+                        alert("手機格式不正確！");
+                    }
+                    // console.log(this.phone);
+
+                    var myname=/.*[A-Za-z\u4e00-\u9fa5]+.*$/; 
+                    if(!myname.test(this.name)){ 
+                        alert("name中請輸入中文或英文！");
+                    }
+                    // console.log(this.name);
+
+                    var myprice=/\d/;
+                    if(!myprice.test(this.Amount) || this.Amount <= 0){
+                        alert("Amount of consumption中請輸入數字!");
+                    }
+                    // console.log(this.Amount);
+
+                    if(myreg.test(this.phone) && myname.test(this.name) && myprice.test(this.Amount) && this.Amount > 0){
+                        this.cond = true;
+                    }else{
+                        this.cond = false;
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

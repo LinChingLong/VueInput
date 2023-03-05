@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.wrapper{
+
+}
+.wrapper .top_area{
+    background-image: url('./images/底色.jpg');
+    display: flex;
+    justify-content: center;
+}
+.wrapper .top_area .top_title{
+    margin-top: 60px;
+    text-align: center;
+}
+.wrapper .top_area .top_title .title_text{
+    font-family:'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+}
+.wrapper .top_area .top_title .title_text p:first-child{
+    font-size: 32px;
+}
+.wrapper .top_area .instructions{
+    width: 808px;
+    height: 322px;
+    background-color: #DAE4F1;
+    border: 2px solid #B57556;
+    border-radius: 20px;
+    color: #204379;
+    padding:0 24px 16px;
+    margin-bottom: 52px;
+}
+.wrapper .top_area .instructions h6{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.wrapper .top_area .instructions p{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+}
+.wrapper .top_area .instructions .cactus_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px auto;
+}
+.wrapper .waves img{
+    display: block;
+}
+.wrapper .input_area{
+    background-color: #E2D9D3;
+    padding-top: 81px;
+}
+.wrapper .input_area .form_area{
+    width: 808px;
+    height: 575px;
+    border: 2px solid #B57556;
+    border-radius: 16px;
+    color: #204379;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+
+    position: relative;
+}
+.wrapper .input_area .form_area .form_logo{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: -30px;
+}
+.wrapper .input_area .form_area .form{
+    padding: 40px 20px;
+}
+.wrapper .input_area .form_area .form select{
+    width: 100%;
+    height: 57px;
+    border-radius: 20px;
+    margin-top: 4px;
+    border: 1px solid #204379;
+    padding-left: 16px;
+}
+.wrapper .input_area .form_area .form input{
+    border: 1px solid #204379;
+    border-radius: 20px;
+    height: 57px;
+    width: 98%;
+    margin-top: 4px;
+    padding-left: 16px;
+}
+.wrapper .input_area .form_area .form p{
+    margin-top: 20px;
+}
+.wrapper .input_area .submit{
+    text-align: center;
+    margin-top: 42px;
+}
+.wrapper .input_area .submit p{
+    color: #E06D6D;
+    font-weight: 400;
+    font-size: 14px;   
+}
+.wrapper .input_area .label_array{
+    margin-top: 120px;
+}
+.wrapper .input_area .label_array ul{
+    width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 32px;
+}
+.wrapper .input_area .label_array ul li{
+    background-image: url('./images/Rectangle\ 412.png');
+    background-repeat: no-repeat;
+    width: 178px;
+    height: 120px;
+    margin:0 32px 30px 0;
+    position: relative;
+    color: #A0BCC8;
+}
+.wrapper .input_area .label_array ul li img{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.wrapper .input_area .label_array ul li p{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    position: absolute;
+    top: 65px;
+
+    width: 100%;
+    text-align: center;
+}
+.wrapper .input_area .label_array ul li:nth-child(1){
+    color: #B3B960;
+}
+.wrapper .input_area .label_array ul li:nth-child(2){
+    color: #B3B960;
+}
+.wrapper .input_area .label_array ul li:nth-child(3){
+    color: #B3B960;
+}
+.wrapper .input_area .label_array ul li .small_icon_green{
+    width: 45px;
+    height: 23px;
+    border: 1px solid #A0BCC8;
+    border-radius: 45px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 15px;
+    right: 8px;
+}
+.wrapper .input_area .label_array ul li .green_line{
+    border: 1px solid #B3B960;
+}
+.wrapper .input_area .lighthouse{
+    text-align: center;
+    padding-bottom: 45px;
+}
+.wrapper .input_area .lighthouse .lighthouse_text{
+    margin:59px auto 20px;
+}
+.wrapper .input_area .lighthouse .lighthouse_text p:first-child{
+    color: #B57556;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+}
+.wrapper .input_area .lighthouse .lighthouse_text p:last-child{
+    color: #204379;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+}
+.wrapper .bottom_img{
+    background-color: #204379;;
+}
+.wrapper .bottom_img .market_out{
+    text-align: center;
+}
+.wrapper .bottom_img .market_out p{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 200%;
+    
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    padding-top: 40px;
+    margin-bottom: 24px;
+}
+.wrapper .bottom_img .market_out img{
+    margin-bottom: 40px;
+}
+
+@media (max-width:768px) {
+    .wrapper .top_area .instructions{
+        width: 720px;
+        padding: 0;
+    }
+    .wrapper .top_area .instructions p{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .wrapper .input_area .form_area{
+        width: 720px;
+    }
+}
+@media (max-width:414px) {
+    .wrapper .top_area .instructions{
+        width: 366px;
+        height: 489px;
+    }
+    .wrapper .input_area .form_area{
+        width: 366px;
+        height: 575px;
+    }
+    .wrapper .input_area .form_area .form input{
+        width: 95%;
+    }
+    .wrapper .input_area .label_array ul{
+        padding-left: 10px;
+        width: 380px;
+    }
+    .wrapper .input_area .label_array ul li{
+        margin: 0 12px 30px 0;
+    }
+}
